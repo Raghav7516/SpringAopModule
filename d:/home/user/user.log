@@ -1,0 +1,817 @@
+2018-06-29 12:34:33,523 INFO  com.aop.AopModuleApplication : Starting AopModuleApplication on contus-OptiPlex-15 with PID 15397 (/home/user/UserInterface/AopModule/target/classes started by user in /home/user/UserInterface/AopModule)
+2018-06-29 12:34:33,525 INFO  com.aop.AopModuleApplication : No active profile set, falling back to default profiles: default
+2018-06-29 12:34:33,548 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5276e6b0: startup date [Fri Jun 29 12:34:33 IST 2018]; root of context hierarchy
+2018-06-29 12:34:34,102 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3f1cf2aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 12:34:34,316 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 7089 (http)
+2018-06-29 12:34:34,326 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-06-29 12:34:34,327 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-29 12:34:34,329 INFO  org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2018-06-29 12:34:34,363 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-06-29 12:34:34,363 INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 815 ms
+2018-06-29 12:34:34,446 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2018-06-29 12:34:34,448 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 12:34:34,448 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 12:34:34,448 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 12:34:34,448 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 12:34:34,550 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-29 12:34:34,558 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-29 12:34:34,587 INFO  org.hibernate.Version : HHH000412: Hibernate Core {5.2.17.Final}
+2018-06-29 12:34:34,587 INFO  org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-06-29 12:34:34,603 INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-29 12:34:34,687 INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2018-06-29 12:34:34,694 INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-29 12:34:34,695 INFO  org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@100c567f
+2018-06-29 12:34:34,872 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-06-29 12:34:34,907 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-06-29 12:34:34,947 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 12:34:35,231 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 12:34:35,448 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5276e6b0: startup date [Fri Jun 29 12:34:33 IST 2018]; root of context hierarchy
+2018-06-29 12:34:35,469 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-29 12:34:35,489 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/reg || /user/{userId}],methods=[POST]}" onto public com.aop.response.Response<com.aop.dto.UserRegDto> com.aop.controller.UserController.createUser(com.aop.dto.UserDto,java.lang.Integer)
+2018-06-29 12:34:35,491 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 12:34:35,491 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 12:34:35,521 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 12:34:35,521 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 12:34:35,724 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-06-29 12:34:35,725 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 12:34:35,728 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-29 12:34:35,744 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 7089 (http) with context path ''
+2018-06-29 12:34:35,746 INFO  com.aop.AopModuleApplication : Started AopModuleApplication in 2.404 seconds (JVM running for 2.661)
+2018-06-29 12:34:39,400 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 12:34:39,400 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 12:34:39,411 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-06-29 12:35:36,976 INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-29 12:35:36,976 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5276e6b0: startup date [Fri Jun 29 12:34:33 IST 2018]; root of context hierarchy
+2018-06-29 12:35:36,977 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2018-06-29 12:35:36,978 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans
+2018-06-29 12:35:36,978 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 12:35:36,979 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2018-06-29 12:35:36,982 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2018-06-29 12:35:43,415 INFO  com.aop.AopModuleApplication : Starting AopModuleApplication on contus-OptiPlex-15 with PID 15549 (/home/user/UserInterface/AopModule/target/classes started by user in /home/user/UserInterface/AopModule)
+2018-06-29 12:35:43,417 INFO  com.aop.AopModuleApplication : No active profile set, falling back to default profiles: default
+2018-06-29 12:35:43,440 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60dcc9fe: startup date [Fri Jun 29 12:35:43 IST 2018]; root of context hierarchy
+2018-06-29 12:35:43,993 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$45e47f37] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 12:35:44,215 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 7089 (http)
+2018-06-29 12:35:44,226 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-06-29 12:35:44,226 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-29 12:35:44,229 INFO  org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2018-06-29 12:35:44,263 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-06-29 12:35:44,264 INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 824 ms
+2018-06-29 12:35:44,345 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2018-06-29 12:35:44,347 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 12:35:44,347 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 12:35:44,347 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 12:35:44,347 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 12:35:44,452 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-29 12:35:44,458 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-29 12:35:44,487 INFO  org.hibernate.Version : HHH000412: Hibernate Core {5.2.17.Final}
+2018-06-29 12:35:44,487 INFO  org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-06-29 12:35:44,505 INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-29 12:35:44,589 INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2018-06-29 12:35:44,597 INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-29 12:35:44,598 INFO  org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6be7bf6d
+2018-06-29 12:35:44,776 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-06-29 12:35:44,811 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-06-29 12:35:44,853 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 12:35:45,142 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 12:35:45,359 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60dcc9fe: startup date [Fri Jun 29 12:35:43 IST 2018]; root of context hierarchy
+2018-06-29 12:35:45,380 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-29 12:35:45,399 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/reg || /user/{userId}],methods=[POST]}" onto public com.aop.response.Response<com.aop.dto.UserRegDto> com.aop.controller.UserController.createUser(com.aop.dto.UserDto,java.lang.Integer)
+2018-06-29 12:35:45,401 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 12:35:45,401 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 12:35:45,430 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 12:35:45,431 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 12:35:45,632 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-06-29 12:35:45,633 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 12:35:45,637 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-29 12:35:45,653 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 7089 (http) with context path ''
+2018-06-29 12:35:45,655 INFO  com.aop.AopModuleApplication : Started AopModuleApplication in 2.408 seconds (JVM running for 2.664)
+2018-06-29 12:35:48,715 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 12:35:48,716 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 12:35:48,726 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2018-06-29 12:35:48,792 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 12:35:48,792 INFO  com.aop.log.UserAudit : createUser method called by userId 25
+2018-06-29 12:35:48,811 INFO  com.aop.log.UserAudit : StopWatch 'com.aop.service.UserService': running time (millis) = 18
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00018  100%  createUser
+
+2018-06-29 12:35:48,811 INFO  com.aop.log.UserAudit : user jagan mohan created by user 25
+2018-06-29 12:35:48,811 INFO  com.aop.log.UserAudit : user jagan mohan created by id 48
+2018-06-29 12:35:48,811 INFO  com.aop.log.UserAudit : user jagan mohan created successfully
+2018-06-29 12:35:48,811 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 12:36:24,101 INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-29 12:36:24,102 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60dcc9fe: startup date [Fri Jun 29 12:35:43 IST 2018]; root of context hierarchy
+2018-06-29 12:36:24,103 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2018-06-29 12:36:24,103 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans
+2018-06-29 12:36:24,104 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 12:36:24,105 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2018-06-29 12:36:24,108 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2018-06-29 13:17:30,353 INFO  com.aop.AopModuleApplication : Starting AopModuleApplication on contus-OptiPlex-15 with PID 16647 (/home/user/UserInterface/AopModule/target/classes started by user in /home/user/UserInterface/AopModule)
+2018-06-29 13:17:30,355 INFO  com.aop.AopModuleApplication : No active profile set, falling back to default profiles: default
+2018-06-29 13:17:30,378 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ec756bd: startup date [Fri Jun 29 13:17:30 IST 2018]; root of context hierarchy
+2018-06-29 13:17:30,965 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c71de1e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 13:17:31,194 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 7089 (http)
+2018-06-29 13:17:31,205 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-06-29 13:17:31,205 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-29 13:17:31,208 INFO  org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2018-06-29 13:17:31,242 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-06-29 13:17:31,243 INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 864 ms
+2018-06-29 13:17:31,318 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2018-06-29 13:17:31,320 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 13:17:31,320 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 13:17:31,320 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 13:17:31,320 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 13:17:31,429 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:17:31,436 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-29 13:17:31,467 INFO  org.hibernate.Version : HHH000412: Hibernate Core {5.2.17.Final}
+2018-06-29 13:17:31,468 INFO  org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-06-29 13:17:31,485 INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-29 13:17:31,576 INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2018-06-29 13:17:31,584 INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-29 13:17:31,585 INFO  org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@39651a82
+2018-06-29 13:17:31,761 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-06-29 13:17:31,797 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-06-29 13:17:31,837 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:17:32,131 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:17:32,387 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ec756bd: startup date [Fri Jun 29 13:17:30 IST 2018]; root of context hierarchy
+2018-06-29 13:17:32,420 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-29 13:17:32,441 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/reg || /user/{userId}],methods=[POST]}" onto public com.aop.response.Response<com.aop.dto.UserRegDto> com.aop.controller.UserController.createUser(com.aop.dto.UserDto,java.lang.Integer)
+2018-06-29 13:17:32,443 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 13:17:32,444 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 13:17:32,478 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:17:32,478 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:17:32,681 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-06-29 13:17:32,682 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 13:17:32,685 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-29 13:17:32,701 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 7089 (http) with context path ''
+2018-06-29 13:17:32,703 INFO  com.aop.AopModuleApplication : Started AopModuleApplication in 2.525 seconds (JVM running for 2.788)
+2018-06-29 13:17:35,395 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 13:17:35,395 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 13:17:35,406 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-06-29 13:17:35,475 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:17:35,475 INFO  com.aop.log.UserAudit : Before Method called by urlhttp://localhost:7089/user/25
+2018-06-29 13:17:35,475 INFO  com.aop.log.UserAudit : createUser method called by userId 25
+2018-06-29 13:17:35,494 INFO  com.aop.log.UserAudit : StopWatch 'com.aop.service.UserService': running time (millis) = 19
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00019  100%  createUser
+
+2018-06-29 13:17:35,494 INFO  com.aop.log.UserAudit : user jagan mohan created by user 25
+2018-06-29 13:17:35,495 INFO  com.aop.log.UserAudit : user jagan mohan created by id 49
+2018-06-29 13:17:35,495 INFO  com.aop.log.UserAudit : user jagan mohan created successfully
+2018-06-29 13:17:35,495 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:19:01,296 INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-29 13:19:01,296 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ec756bd: startup date [Fri Jun 29 13:17:30 IST 2018]; root of context hierarchy
+2018-06-29 13:19:01,297 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2018-06-29 13:19:01,298 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans
+2018-06-29 13:19:01,298 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:19:01,299 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2018-06-29 13:19:01,301 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2018-06-29 13:19:07,328 INFO  com.aop.AopModuleApplication : Starting AopModuleApplication on contus-OptiPlex-15 with PID 16783 (/home/user/UserInterface/AopModule/target/classes started by user in /home/user/UserInterface/AopModule)
+2018-06-29 13:19:07,330 INFO  com.aop.AopModuleApplication : No active profile set, falling back to default profiles: default
+2018-06-29 13:19:07,351 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@222114ba: startup date [Fri Jun 29 13:19:07 IST 2018]; root of context hierarchy
+2018-06-29 13:19:07,913 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f7e7158] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 13:19:08,147 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 7089 (http)
+2018-06-29 13:19:08,158 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-06-29 13:19:08,158 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-29 13:19:08,161 INFO  org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2018-06-29 13:19:08,204 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-06-29 13:19:08,205 INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 853 ms
+2018-06-29 13:19:08,298 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2018-06-29 13:19:08,300 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 13:19:08,300 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 13:19:08,300 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 13:19:08,300 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 13:19:08,406 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:19:08,413 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-29 13:19:08,444 INFO  org.hibernate.Version : HHH000412: Hibernate Core {5.2.17.Final}
+2018-06-29 13:19:08,444 INFO  org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-06-29 13:19:08,461 INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-29 13:19:08,549 INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2018-06-29 13:19:08,556 INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-29 13:19:08,557 INFO  org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@33364212
+2018-06-29 13:19:08,735 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-06-29 13:19:08,769 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-06-29 13:19:08,810 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:19:09,088 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:19:09,296 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@222114ba: startup date [Fri Jun 29 13:19:07 IST 2018]; root of context hierarchy
+2018-06-29 13:19:09,317 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-29 13:19:09,337 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/reg || /user/{userId}],methods=[POST]}" onto public com.aop.response.Response<com.aop.dto.UserRegDto> com.aop.controller.UserController.createUser(com.aop.dto.UserDto,java.lang.Integer)
+2018-06-29 13:19:09,339 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 13:19:09,339 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 13:19:09,372 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:19:09,372 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:19:09,597 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-06-29 13:19:09,599 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 13:19:09,602 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-29 13:19:09,617 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 7089 (http) with context path ''
+2018-06-29 13:19:09,619 INFO  com.aop.AopModuleApplication : Started AopModuleApplication in 2.459 seconds (JVM running for 2.72)
+2018-06-29 13:19:12,234 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 13:19:12,235 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 13:19:12,246 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-06-29 13:19:12,312 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:19:12,312 INFO  com.aop.log.UserAudit : Before Method called by url :http://localhost:7089/user/25POST
+2018-06-29 13:19:12,312 INFO  com.aop.log.UserAudit : createUser method called by userId 25
+2018-06-29 13:19:12,330 INFO  com.aop.log.UserAudit : StopWatch 'com.aop.service.UserService': running time (millis) = 18
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00018  100%  createUser
+
+2018-06-29 13:19:12,330 INFO  com.aop.log.UserAudit : user jagan mohan created by user 25
+2018-06-29 13:19:12,330 INFO  com.aop.log.UserAudit : user jagan mohan created by id 50
+2018-06-29 13:19:12,330 INFO  com.aop.log.UserAudit : user jagan mohan created successfully
+2018-06-29 13:19:12,331 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:29:30,339 INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-29 13:29:30,339 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@222114ba: startup date [Fri Jun 29 13:19:07 IST 2018]; root of context hierarchy
+2018-06-29 13:29:30,342 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2018-06-29 13:29:30,342 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans
+2018-06-29 13:29:30,343 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:29:30,344 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2018-06-29 13:29:30,347 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2018-06-29 13:29:45,892 INFO  com.aop.AopModuleApplication : Starting AopModuleApplication on contus-OptiPlex-15 with PID 17182 (/home/user/UserInterface/AopModule/target/classes started by user in /home/user/UserInterface/AopModule)
+2018-06-29 13:29:45,894 INFO  com.aop.AopModuleApplication : No active profile set, falling back to default profiles: default
+2018-06-29 13:29:45,915 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5db250b4: startup date [Fri Jun 29 13:29:45 IST 2018]; root of context hierarchy
+2018-06-29 13:29:46,422 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d5537d7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 13:29:46,636 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 7089 (http)
+2018-06-29 13:29:46,647 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-06-29 13:29:46,647 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-29 13:29:46,650 INFO  org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2018-06-29 13:29:46,685 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-06-29 13:29:46,686 INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 771 ms
+2018-06-29 13:29:46,766 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2018-06-29 13:29:46,768 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 13:29:46,768 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 13:29:46,768 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 13:29:46,769 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 13:29:46,871 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:29:46,878 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-29 13:29:46,909 INFO  org.hibernate.Version : HHH000412: Hibernate Core {5.2.17.Final}
+2018-06-29 13:29:46,910 INFO  org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-06-29 13:29:46,926 INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-29 13:29:47,014 INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2018-06-29 13:29:47,021 INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-29 13:29:47,022 INFO  org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@31e04b13
+2018-06-29 13:29:47,206 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-06-29 13:29:47,243 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-06-29 13:29:47,285 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:29:47,578 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:29:47,815 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5db250b4: startup date [Fri Jun 29 13:29:45 IST 2018]; root of context hierarchy
+2018-06-29 13:29:47,836 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-29 13:29:47,856 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/reg || /user/{userId}],methods=[POST]}" onto public com.aop.response.Response<com.aop.dto.UserRegDto> com.aop.controller.UserController.createUser(com.aop.dto.UserDto,java.lang.Integer)
+2018-06-29 13:29:47,858 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 13:29:47,858 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 13:29:47,892 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:29:47,892 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:29:48,097 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-06-29 13:29:48,099 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 13:29:48,102 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-29 13:29:48,116 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 7089 (http) with context path ''
+2018-06-29 13:29:48,118 INFO  com.aop.AopModuleApplication : Started AopModuleApplication in 2.391 seconds (JVM running for 2.649)
+2018-06-29 13:30:20,275 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 13:30:20,275 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 13:30:20,286 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-06-29 13:30:20,347 INFO  com.aop.log.UserAudit : Around Method called before create user
+2018-06-29 13:30:20,348 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:30:20,348 INFO  com.aop.log.UserAudit : Before Method called by url :http://localhost:7089/user/25
+2018-06-29 13:30:20,348 INFO  com.aop.log.UserAudit : method type :POST
+2018-06-29 13:30:20,348 INFO  com.aop.log.UserAudit : User created with data :UserDto [firstName=jagan, lastName=mohan, age=25, email=hjfjkfhk]
+2018-06-29 13:30:20,365 INFO  com.aop.log.UserAudit : StopWatch 'com.aop.service.UserService': running time (millis) = 17
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00017  100%  createUser
+
+2018-06-29 13:30:20,365 INFO  com.aop.log.UserAudit : Around Method called after create user
+2018-06-29 13:30:20,365 INFO  com.aop.log.UserAudit : user jagan mohan created by user 25
+2018-06-29 13:30:20,365 INFO  com.aop.log.UserAudit : After Method called before returning response
+2018-06-29 13:30:20,366 INFO  com.aop.log.UserAudit : user jagan mohan created by id 51
+2018-06-29 13:30:20,366 INFO  com.aop.log.UserAudit : user jagan mohan created successfully
+2018-06-29 13:30:20,366 INFO  com.aop.log.UserAudit : After Returning Method callled when user get response
+2018-06-29 13:30:20,366 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:34:19,202 INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-29 13:34:19,202 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5db250b4: startup date [Fri Jun 29 13:29:45 IST 2018]; root of context hierarchy
+2018-06-29 13:34:19,204 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2018-06-29 13:34:19,204 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans
+2018-06-29 13:34:19,205 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:34:19,205 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2018-06-29 13:34:19,208 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2018-06-29 13:34:33,971 INFO  com.aop.AopModuleApplication : Starting AopModuleApplication on contus-OptiPlex-15 with PID 17363 (/home/user/UserInterface/AopModule/target/classes started by user in /home/user/UserInterface/AopModule)
+2018-06-29 13:34:33,973 INFO  com.aop.AopModuleApplication : No active profile set, falling back to default profiles: default
+2018-06-29 13:34:33,994 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78e94dcf: startup date [Fri Jun 29 13:34:33 IST 2018]; root of context hierarchy
+2018-06-29 13:34:34,509 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a5fa887a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 13:34:34,738 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 7089 (http)
+2018-06-29 13:34:34,749 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-06-29 13:34:34,750 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-29 13:34:34,752 INFO  org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2018-06-29 13:34:34,788 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-06-29 13:34:34,789 INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 795 ms
+2018-06-29 13:34:34,874 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2018-06-29 13:34:34,876 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 13:34:34,877 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 13:34:34,877 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 13:34:34,877 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 13:34:34,995 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:34:35,004 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-29 13:34:35,035 INFO  org.hibernate.Version : HHH000412: Hibernate Core {5.2.17.Final}
+2018-06-29 13:34:35,036 INFO  org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-06-29 13:34:35,052 INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-29 13:34:35,139 INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2018-06-29 13:34:35,147 INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-29 13:34:35,148 INFO  org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6e8a9c30
+2018-06-29 13:34:35,336 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-06-29 13:34:35,373 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-06-29 13:34:35,417 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:34:35,720 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:34:35,933 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78e94dcf: startup date [Fri Jun 29 13:34:33 IST 2018]; root of context hierarchy
+2018-06-29 13:34:35,954 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-29 13:34:35,972 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/reg || /user/{userId}],methods=[POST]}" onto public com.aop.response.Response<com.aop.dto.UserRegDto> com.aop.controller.UserController.createUser(com.aop.dto.UserDto,java.lang.Integer)
+2018-06-29 13:34:35,974 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 13:34:35,974 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 13:34:36,002 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:34:36,002 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:34:36,198 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-06-29 13:34:36,199 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 13:34:36,202 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-29 13:34:36,217 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 7089 (http) with context path ''
+2018-06-29 13:34:36,219 INFO  com.aop.AopModuleApplication : Started AopModuleApplication in 2.406 seconds (JVM running for 2.688)
+2018-06-29 13:34:38,788 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 13:34:38,788 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 13:34:38,799 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-06-29 13:34:38,863 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:34:38,863 INFO  com.aop.log.UserAudit : Around Method called before create user get request
+2018-06-29 13:34:38,864 INFO  com.aop.log.UserAudit : Before Method called by url :http://localhost:7089/user/25
+2018-06-29 13:34:38,864 INFO  com.aop.log.UserAudit : method type :POST
+2018-06-29 13:34:38,864 INFO  com.aop.log.UserAudit : User created with data :UserDto [firstName=jagan, lastName=mohan, age=25, email=hjfjkfhk]
+2018-06-29 13:34:38,882 INFO  com.aop.log.UserAudit : StopWatch 'com.aop.service.UserService': running time (millis) = 18
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00018  100%  createUser
+
+2018-06-29 13:34:38,882 INFO  com.aop.log.UserAudit : Around Method called after create user
+2018-06-29 13:34:38,883 INFO  com.aop.log.UserAudit : user jagan mohan created by user 25
+2018-06-29 13:34:38,883 INFO  com.aop.log.UserAudit : After Method called before returning response
+2018-06-29 13:34:38,883 INFO  com.aop.log.UserAudit : user jagan mohan created by id 52
+2018-06-29 13:34:38,883 INFO  com.aop.log.UserAudit : user jagan mohan created successfully
+2018-06-29 13:34:38,883 INFO  com.aop.log.UserAudit : After Returning Method callled when user get response
+2018-06-29 13:34:38,883 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:35:43,145 INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-29 13:35:43,145 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78e94dcf: startup date [Fri Jun 29 13:34:33 IST 2018]; root of context hierarchy
+2018-06-29 13:35:43,146 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2018-06-29 13:35:43,147 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans
+2018-06-29 13:35:43,147 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:35:43,148 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2018-06-29 13:35:43,151 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2018-06-29 13:35:55,375 INFO  com.aop.AopModuleApplication : Starting AopModuleApplication on contus-OptiPlex-15 with PID 17473 (/home/user/UserInterface/AopModule/target/classes started by user in /home/user/UserInterface/AopModule)
+2018-06-29 13:35:55,376 INFO  com.aop.AopModuleApplication : No active profile set, falling back to default profiles: default
+2018-06-29 13:35:55,399 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45018215: startup date [Fri Jun 29 13:35:55 IST 2018]; root of context hierarchy
+2018-06-29 13:35:56,001 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$78ca6057] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 13:35:56,236 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 7089 (http)
+2018-06-29 13:35:56,248 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-06-29 13:35:56,248 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-29 13:35:56,251 INFO  org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2018-06-29 13:35:56,290 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-06-29 13:35:56,290 INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 891 ms
+2018-06-29 13:35:56,374 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2018-06-29 13:35:56,377 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 13:35:56,377 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 13:35:56,377 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 13:35:56,377 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 13:35:56,493 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:35:56,500 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-29 13:35:56,533 INFO  org.hibernate.Version : HHH000412: Hibernate Core {5.2.17.Final}
+2018-06-29 13:35:56,533 INFO  org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-06-29 13:35:56,550 INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-29 13:35:56,639 INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2018-06-29 13:35:56,646 INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-29 13:35:56,647 INFO  org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@66153688
+2018-06-29 13:35:56,828 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-06-29 13:35:56,862 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-06-29 13:35:56,902 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:35:57,184 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:35:57,430 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45018215: startup date [Fri Jun 29 13:35:55 IST 2018]; root of context hierarchy
+2018-06-29 13:35:57,452 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-29 13:35:57,472 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/reg || /user/{userId}],methods=[POST]}" onto public com.aop.response.Response<com.aop.dto.UserRegDto> com.aop.controller.UserController.createUser(com.aop.dto.UserDto,java.lang.Integer)
+2018-06-29 13:35:57,474 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 13:35:57,474 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 13:35:57,506 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:35:57,506 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:35:57,730 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-06-29 13:35:57,731 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 13:35:57,734 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-29 13:35:57,751 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 7089 (http) with context path ''
+2018-06-29 13:35:57,753 INFO  com.aop.AopModuleApplication : Started AopModuleApplication in 2.556 seconds (JVM running for 2.815)
+2018-06-29 13:36:02,577 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 13:36:02,577 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 13:36:02,588 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-06-29 13:36:02,651 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:36:02,651 INFO  com.aop.log.UserAudit : Around Method called before createUser method get request
+2018-06-29 13:36:02,652 INFO  com.aop.log.UserAudit : Before Method called by url :http://localhost:7089/user/25
+2018-06-29 13:36:02,652 INFO  com.aop.log.UserAudit : method type :POST
+2018-06-29 13:36:02,652 INFO  com.aop.log.UserAudit : User created with data :UserDto [firstName=jagan, lastName=mohan, age=25, email=hjfjkfhk]
+2018-06-29 13:36:02,670 INFO  com.aop.log.UserAudit : StopWatch 'com.aop.service.UserService': running time (millis) = 18
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00018  100%  createUser
+
+2018-06-29 13:36:02,670 INFO  com.aop.log.UserAudit : Around Method called after create user
+2018-06-29 13:36:02,670 INFO  com.aop.log.UserAudit : user jagan mohan created by user 25
+2018-06-29 13:36:02,670 INFO  com.aop.log.UserAudit : After Method called before returning response
+2018-06-29 13:36:02,670 INFO  com.aop.log.UserAudit : user jagan mohan created by id 53
+2018-06-29 13:36:02,670 INFO  com.aop.log.UserAudit : user jagan mohan created successfully
+2018-06-29 13:36:02,671 INFO  com.aop.log.UserAudit : After Returning Method callled when user get response
+2018-06-29 13:36:02,671 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:39:07,696 INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-29 13:39:07,696 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45018215: startup date [Fri Jun 29 13:35:55 IST 2018]; root of context hierarchy
+2018-06-29 13:39:07,698 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2018-06-29 13:39:07,699 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans
+2018-06-29 13:39:07,700 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:39:07,701 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2018-06-29 13:39:07,705 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2018-06-29 13:39:20,800 INFO  com.aop.AopModuleApplication : Starting AopModuleApplication on contus-OptiPlex-15 with PID 17647 (/home/user/UserInterface/AopModule/target/classes started by user in /home/user/UserInterface/AopModule)
+2018-06-29 13:39:20,802 INFO  com.aop.AopModuleApplication : No active profile set, falling back to default profiles: default
+2018-06-29 13:39:20,826 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38c5cc4c: startup date [Fri Jun 29 13:39:20 IST 2018]; root of context hierarchy
+2018-06-29 13:39:21,396 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e14f60c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 13:39:21,620 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 7089 (http)
+2018-06-29 13:39:21,630 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-06-29 13:39:21,630 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-29 13:39:21,633 INFO  org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2018-06-29 13:39:21,668 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-06-29 13:39:21,668 INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 842 ms
+2018-06-29 13:39:21,750 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2018-06-29 13:39:21,752 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 13:39:21,752 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 13:39:21,752 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 13:39:21,752 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 13:39:21,856 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:39:21,862 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-29 13:39:21,892 INFO  org.hibernate.Version : HHH000412: Hibernate Core {5.2.17.Final}
+2018-06-29 13:39:21,892 INFO  org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-06-29 13:39:21,910 INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-29 13:39:21,997 INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2018-06-29 13:39:22,005 INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-29 13:39:22,006 INFO  org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6c1832aa
+2018-06-29 13:39:22,185 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-06-29 13:39:22,220 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-06-29 13:39:22,261 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:39:22,551 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:39:22,766 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38c5cc4c: startup date [Fri Jun 29 13:39:20 IST 2018]; root of context hierarchy
+2018-06-29 13:39:22,787 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-29 13:39:22,807 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/reg || /user/{userId}],methods=[POST]}" onto public com.aop.response.Response<com.aop.dto.UserRegDto> com.aop.controller.UserController.createUser(com.aop.dto.UserDto,java.lang.Integer)
+2018-06-29 13:39:22,809 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 13:39:22,809 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 13:39:22,838 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:39:22,838 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:39:23,041 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-06-29 13:39:23,042 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 13:39:23,045 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-29 13:39:23,060 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 7089 (http) with context path ''
+2018-06-29 13:39:23,062 INFO  com.aop.AopModuleApplication : Started AopModuleApplication in 2.436 seconds (JVM running for 2.712)
+2018-06-29 13:39:25,278 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 13:39:25,278 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 13:39:25,289 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-06-29 13:39:25,352 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:39:25,352 INFO  com.aop.log.UserAudit : Around Method called before createUser method get request
+2018-06-29 13:39:25,353 INFO  com.aop.log.UserAudit : Before Method Start +++++++++++++++++++++++++++++++++++
+2018-06-29 13:39:25,353 INFO  com.aop.log.UserAudit : Before Method called by url :http://localhost:7089/user/25
+2018-06-29 13:39:25,353 INFO  com.aop.log.UserAudit : method type :POST
+2018-06-29 13:39:25,353 INFO  com.aop.log.UserAudit : User created with data :UserDto [firstName=jagan, lastName=mohan, age=25, email=hjfjkfhk]
+2018-06-29 13:39:25,353 INFO  com.aop.log.UserAudit : Before Method End +++++++++++++++++++++++++++++++++++++
+2018-06-29 13:39:25,370 INFO  com.aop.log.UserAudit : StopWatch 'com.aop.service.UserService': running time (millis) = 17
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00017  100%  createUser
+
+2018-06-29 13:39:25,370 INFO  com.aop.log.UserAudit : Around Method called after create user
+2018-06-29 13:39:25,370 INFO  com.aop.log.UserAudit : user jagan mohan created by user 25
+2018-06-29 13:39:25,370 INFO  com.aop.log.UserAudit : After Method called before returning response
+2018-06-29 13:39:25,370 INFO  com.aop.log.UserAudit : user jagan mohan created by id 54
+2018-06-29 13:39:25,371 INFO  com.aop.log.UserAudit : user jagan mohan created successfully
+2018-06-29 13:39:25,371 INFO  com.aop.log.UserAudit : After Returning Method callled when user get response
+2018-06-29 13:39:25,371 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:42:55,499 INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-29 13:42:55,499 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38c5cc4c: startup date [Fri Jun 29 13:39:20 IST 2018]; root of context hierarchy
+2018-06-29 13:42:55,501 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2018-06-29 13:42:55,501 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans
+2018-06-29 13:42:55,501 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:42:55,502 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2018-06-29 13:42:55,504 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2018-06-29 13:43:08,826 INFO  com.aop.AopModuleApplication : Starting AopModuleApplication on contus-OptiPlex-15 with PID 17829 (/home/user/UserInterface/AopModule/target/classes started by user in /home/user/UserInterface/AopModule)
+2018-06-29 13:43:08,828 INFO  com.aop.AopModuleApplication : No active profile set, falling back to default profiles: default
+2018-06-29 13:43:08,855 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3901d134: startup date [Fri Jun 29 13:43:08 IST 2018]; root of context hierarchy
+2018-06-29 13:43:09,425 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$45e47f37] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 13:43:09,650 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 7089 (http)
+2018-06-29 13:43:09,660 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-06-29 13:43:09,660 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-29 13:43:09,663 INFO  org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2018-06-29 13:43:09,697 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-06-29 13:43:09,697 INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 842 ms
+2018-06-29 13:43:09,778 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2018-06-29 13:43:09,780 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 13:43:09,780 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 13:43:09,780 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 13:43:09,780 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 13:43:09,883 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:43:09,889 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-29 13:43:09,918 INFO  org.hibernate.Version : HHH000412: Hibernate Core {5.2.17.Final}
+2018-06-29 13:43:09,919 INFO  org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-06-29 13:43:09,935 INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-29 13:43:10,020 INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2018-06-29 13:43:10,028 INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-29 13:43:10,029 INFO  org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@134c370e
+2018-06-29 13:43:10,205 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-06-29 13:43:10,241 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-06-29 13:43:10,281 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:43:10,571 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:43:10,788 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3901d134: startup date [Fri Jun 29 13:43:08 IST 2018]; root of context hierarchy
+2018-06-29 13:43:10,808 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-29 13:43:10,827 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/reg || /user/{userId}],methods=[POST]}" onto public com.aop.response.Response<com.aop.dto.UserRegDto> com.aop.controller.UserController.createUser(com.aop.dto.UserDto,java.lang.Integer)
+2018-06-29 13:43:10,829 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 13:43:10,830 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 13:43:10,859 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:43:10,859 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:43:11,058 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-06-29 13:43:11,059 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 13:43:11,063 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-29 13:43:11,078 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 7089 (http) with context path ''
+2018-06-29 13:43:11,080 INFO  com.aop.AopModuleApplication : Started AopModuleApplication in 2.427 seconds (JVM running for 2.703)
+2018-06-29 13:43:13,429 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 13:43:13,429 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 13:43:13,442 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-06-29 13:43:13,506 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:43:13,506 INFO  com.aop.log.UserAudit : Around Method Start ========================================
+2018-06-29 13:43:13,506 INFO  com.aop.log.UserAudit : Around Method called before createUser method get request
+2018-06-29 13:43:13,507 INFO  com.aop.log.UserAudit : Before Method Start +++++++++++++++++++++++++++++++++++++
+2018-06-29 13:43:13,507 INFO  com.aop.log.UserAudit : Before Method called by url :http://localhost:7089/user/25
+2018-06-29 13:43:13,507 INFO  com.aop.log.UserAudit : method type :POST
+2018-06-29 13:43:13,507 INFO  com.aop.log.UserAudit : User created with data :UserDto [firstName=jagan, lastName=mohan, age=25, email=hjfjkfhk]
+2018-06-29 13:43:13,507 INFO  com.aop.log.UserAudit : Before Method End +++++++++++++++++++++++++++++++++++++++
+2018-06-29 13:43:13,524 INFO  com.aop.log.UserAudit : StopWatch 'com.aop.service.UserService': running time (millis) = 17
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00017  100%  createUser
+
+2018-06-29 13:43:13,524 INFO  com.aop.log.UserAudit : Around Method called after create user
+2018-06-29 13:43:13,524 INFO  com.aop.log.UserAudit : Around Method End =========================================
+2018-06-29 13:43:13,524 INFO  com.aop.log.UserAudit : user jagan mohan created by user 25
+2018-06-29 13:43:13,524 INFO  com.aop.log.UserAudit : After Method called before returning response
+2018-06-29 13:43:13,525 INFO  com.aop.log.UserAudit : user jagan mohan created by id 55
+2018-06-29 13:43:13,525 INFO  com.aop.log.UserAudit : user jagan mohan created successfully
+2018-06-29 13:43:13,525 INFO  com.aop.log.UserAudit : After Returning Method callled when user get response
+2018-06-29 13:43:13,525 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:46:38,142 INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-29 13:46:38,142 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3901d134: startup date [Fri Jun 29 13:43:08 IST 2018]; root of context hierarchy
+2018-06-29 13:46:38,143 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2018-06-29 13:46:38,144 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans
+2018-06-29 13:46:38,144 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:46:38,145 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2018-06-29 13:46:38,148 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2018-06-29 13:46:44,830 INFO  com.aop.AopModuleApplication : Starting AopModuleApplication on contus-OptiPlex-15 with PID 18025 (/home/user/UserInterface/AopModule/target/classes started by user in /home/user/UserInterface/AopModule)
+2018-06-29 13:46:44,832 INFO  com.aop.AopModuleApplication : No active profile set, falling back to default profiles: default
+2018-06-29 13:46:44,854 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5bfa9431: startup date [Fri Jun 29 13:46:44 IST 2018]; root of context hierarchy
+2018-06-29 13:46:45,418 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e296e7be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 13:46:45,644 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 7089 (http)
+2018-06-29 13:46:45,655 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-06-29 13:46:45,655 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-29 13:46:45,658 INFO  org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2018-06-29 13:46:45,692 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-06-29 13:46:45,692 INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 839 ms
+2018-06-29 13:46:45,765 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2018-06-29 13:46:45,767 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 13:46:45,768 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 13:46:45,768 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 13:46:45,768 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 13:46:45,875 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:46:45,881 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-29 13:46:45,912 INFO  org.hibernate.Version : HHH000412: Hibernate Core {5.2.17.Final}
+2018-06-29 13:46:45,913 INFO  org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-06-29 13:46:45,930 INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-29 13:46:46,044 INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2018-06-29 13:46:46,051 INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-29 13:46:46,052 INFO  org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7f92b990
+2018-06-29 13:46:46,229 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-06-29 13:46:46,265 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-06-29 13:46:46,305 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:46:46,584 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:46:46,825 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5bfa9431: startup date [Fri Jun 29 13:46:44 IST 2018]; root of context hierarchy
+2018-06-29 13:46:46,857 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-29 13:46:46,877 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/reg || /user/{userId}],methods=[POST]}" onto public com.aop.response.Response<com.aop.dto.UserRegDto> com.aop.controller.UserController.createUser(com.aop.dto.UserDto,java.lang.Integer)
+2018-06-29 13:46:46,879 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 13:46:46,879 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 13:46:46,908 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:46:46,909 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:46:47,100 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-06-29 13:46:47,101 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 13:46:47,105 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-29 13:46:47,120 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 7089 (http) with context path ''
+2018-06-29 13:46:47,122 INFO  com.aop.AopModuleApplication : Started AopModuleApplication in 2.463 seconds (JVM running for 2.716)
+2018-06-29 13:46:50,239 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 13:46:50,239 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 13:46:50,249 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2018-06-29 13:46:50,311 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:46:50,311 INFO  com.aop.log.UserAudit : Around Method Start ========================================
+2018-06-29 13:46:50,311 INFO  com.aop.log.UserAudit : Around Method called before createUser method get request
+2018-06-29 13:46:50,312 INFO  com.aop.log.UserAudit : Before Method Start +++++++++++++++++++++++++++++++++++++
+2018-06-29 13:46:50,312 INFO  com.aop.log.UserAudit : Before Method called by url :http://localhost:7089/user/25
+2018-06-29 13:46:50,312 INFO  com.aop.log.UserAudit : method type :POST
+2018-06-29 13:46:50,312 INFO  com.aop.log.UserAudit : User created with data :UserDto [firstName=jagan, lastName=mohan, age=25, email=hjfjkfhk]
+2018-06-29 13:46:50,312 INFO  com.aop.log.UserAudit : Before Method End +++++++++++++++++++++++++++++++++++++++
+2018-06-29 13:46:50,329 INFO  com.aop.log.UserAudit : StopWatch 'com.aop.service.UserService': running time (millis) = 17
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00017  100%  createUser
+
+2018-06-29 13:46:50,329 INFO  com.aop.log.UserAudit : Around Method called after create user
+2018-06-29 13:46:50,329 INFO  com.aop.log.UserAudit : Around Method End =========================================
+2018-06-29 13:46:50,329 INFO  com.aop.log.UserAudit : After Method Start -----------------------------------------------
+2018-06-29 13:46:50,329 INFO  com.aop.log.UserAudit : user jagan mohan created by user 25
+2018-06-29 13:46:50,329 INFO  com.aop.log.UserAudit : After Method called before returning response
+2018-06-29 13:46:50,329 INFO  com.aop.log.UserAudit : After Method End --------------------------------------------------
+2018-06-29 13:46:50,330 INFO  com.aop.log.UserAudit : After Returning Start ****************************************************
+2018-06-29 13:46:50,330 INFO  com.aop.log.UserAudit : user jagan mohan created by id 56
+2018-06-29 13:46:50,330 INFO  com.aop.log.UserAudit : user jagan mohan created successfully
+2018-06-29 13:46:50,330 INFO  com.aop.log.UserAudit : After Returning Method callled when user get response
+2018-06-29 13:46:50,330 INFO  com.aop.log.UserAudit : After Returning End ******************************************************
+2018-06-29 13:46:50,330 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:47:23,518 INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-29 13:47:23,519 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5bfa9431: startup date [Fri Jun 29 13:46:44 IST 2018]; root of context hierarchy
+2018-06-29 13:47:23,520 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2018-06-29 13:47:23,520 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans
+2018-06-29 13:47:23,521 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:47:23,521 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2018-06-29 13:47:23,523 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2018-06-29 13:49:03,581 INFO  com.aop.AopModuleApplication : Starting AopModuleApplication on contus-OptiPlex-15 with PID 18180 (/home/user/UserInterface/AopModule1/target/classes started by user in /home/user/UserInterface/AopModule1)
+2018-06-29 13:49:03,583 INFO  com.aop.AopModuleApplication : No active profile set, falling back to default profiles: default
+2018-06-29 13:49:03,604 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f8c1ddd: startup date [Fri Jun 29 13:49:03 IST 2018]; root of context hierarchy
+2018-06-29 13:49:04,126 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$81d37fe0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 13:49:04,343 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 7089 (http)
+2018-06-29 13:49:04,354 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-06-29 13:49:04,354 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-29 13:49:04,356 INFO  org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2018-06-29 13:49:04,390 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-06-29 13:49:04,390 INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 786 ms
+2018-06-29 13:49:04,473 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2018-06-29 13:49:04,475 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 13:49:04,475 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 13:49:04,475 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 13:49:04,475 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 13:49:04,584 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:49:04,590 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-29 13:49:04,619 INFO  org.hibernate.Version : HHH000412: Hibernate Core {5.2.17.Final}
+2018-06-29 13:49:04,620 INFO  org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-06-29 13:49:04,636 INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-29 13:49:04,723 INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2018-06-29 13:49:04,732 INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-29 13:49:04,733 INFO  org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3e6534e7
+2018-06-29 13:49:04,916 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-06-29 13:49:04,953 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-06-29 13:49:04,995 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:49:05,299 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:49:05,515 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f8c1ddd: startup date [Fri Jun 29 13:49:03 IST 2018]; root of context hierarchy
+2018-06-29 13:49:05,536 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-29 13:49:05,555 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/reg || /user/{userId}],methods=[POST]}" onto public com.aop.response.Response<com.aop.dto.UserRegDto> com.aop.controller.UserController.createUser(com.aop.dto.UserDto,java.lang.Integer)
+2018-06-29 13:49:05,557 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 13:49:05,558 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 13:49:05,586 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:49:05,586 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:49:05,778 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-06-29 13:49:05,779 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 13:49:05,782 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-29 13:49:05,797 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 7089 (http) with context path ''
+2018-06-29 13:49:05,799 INFO  com.aop.AopModuleApplication : Started AopModuleApplication in 2.393 seconds (JVM running for 2.69)
+2018-06-29 13:49:08,754 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 13:49:08,754 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 13:49:08,767 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-06-29 13:49:08,831 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:49:08,831 INFO  com.aop.log.UserAudit : Around Method Start ========================================
+2018-06-29 13:49:08,831 INFO  com.aop.log.UserAudit : Around Method called before createUser method get request
+2018-06-29 13:49:08,832 INFO  com.aop.log.UserAudit : Before Method Start +++++++++++++++++++++++++++++++++++++
+2018-06-29 13:49:08,832 INFO  com.aop.log.UserAudit : Before Method called by url :http://localhost:7089/user/25
+2018-06-29 13:49:08,832 INFO  com.aop.log.UserAudit : method type :POST
+2018-06-29 13:49:08,832 INFO  com.aop.log.UserAudit : User created with data :UserDto [firstName=jagan, lastName=mohan, age=25, email=hjfjkfhk]
+2018-06-29 13:49:08,832 INFO  com.aop.log.UserAudit : Before Method End +++++++++++++++++++++++++++++++++++++++
+2018-06-29 13:49:08,850 INFO  com.aop.log.UserAudit : StopWatch 'com.aop.service.UserService': running time (millis) = 17
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00017  100%  createUser
+
+2018-06-29 13:49:08,850 INFO  com.aop.log.UserAudit : Around Method called after create user
+2018-06-29 13:49:08,850 INFO  com.aop.log.UserAudit : Around Method End =========================================
+2018-06-29 13:49:08,850 INFO  com.aop.log.UserAudit : After Method Start -----------------------------------------------
+2018-06-29 13:49:08,850 INFO  com.aop.log.UserAudit : user jagan mohan created by user 25
+2018-06-29 13:49:08,850 INFO  com.aop.log.UserAudit : After Method called before returning response
+2018-06-29 13:49:08,850 INFO  com.aop.log.UserAudit : After Method End --------------------------------------------------
+2018-06-29 13:49:08,850 INFO  com.aop.log.UserAudit : After Returning Start ****************************************************
+2018-06-29 13:49:08,851 INFO  com.aop.log.UserAudit : user jagan mohan created by id 57
+2018-06-29 13:49:08,851 INFO  com.aop.log.UserAudit : user jagan mohan created successfully
+2018-06-29 13:49:08,851 INFO  com.aop.log.UserAudit : After Returning Method callled when user get response
+2018-06-29 13:49:08,851 INFO  com.aop.log.UserAudit : After Returning End ******************************************************
+2018-06-29 13:49:08,851 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:49:23,584 INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-06-29 13:49:23,584 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f8c1ddd: startup date [Fri Jun 29 13:49:03 IST 2018]; root of context hierarchy
+2018-06-29 13:49:23,585 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2018-06-29 13:49:23,586 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans
+2018-06-29 13:49:23,586 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:49:23,587 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2018-06-29 13:49:23,589 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2018-06-29 13:51:16,031 INFO  com.aop.AopModuleApplication : Starting AopModuleApplication on contus-OptiPlex-15 with PID 18477 (/home/user/UserInterface/SpringAopModule/target/classes started by user in /home/user/UserInterface/SpringAopModule)
+2018-06-29 13:51:16,032 INFO  com.aop.AopModuleApplication : No active profile set, falling back to default profiles: default
+2018-06-29 13:51:16,053 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b07a0d6: startup date [Fri Jun 29 13:51:16 IST 2018]; root of context hierarchy
+2018-06-29 13:51:16,583 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1617c84b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-29 13:51:16,822 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 7089 (http)
+2018-06-29 13:51:16,834 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-06-29 13:51:16,835 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-29 13:51:16,838 INFO  org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2018-06-29 13:51:16,883 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-06-29 13:51:16,883 INFO  org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 830 ms
+2018-06-29 13:51:16,968 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2018-06-29 13:51:16,970 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-29 13:51:16,971 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-29 13:51:16,971 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-29 13:51:16,971 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-29 13:51:17,089 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:51:17,096 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-29 13:51:17,128 INFO  org.hibernate.Version : HHH000412: Hibernate Core {5.2.17.Final}
+2018-06-29 13:51:17,128 INFO  org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-06-29 13:51:17,145 INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-29 13:51:17,233 INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2018-06-29 13:51:17,241 INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-29 13:51:17,242 INFO  org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3971f0fe
+2018-06-29 13:51:17,437 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-06-29 13:51:17,475 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-06-29 13:51:17,518 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-29 13:51:17,794 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:51:18,003 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b07a0d6: startup date [Fri Jun 29 13:51:16 IST 2018]; root of context hierarchy
+2018-06-29 13:51:18,023 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-29 13:51:18,044 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/reg || /user/{userId}],methods=[POST]}" onto public com.aop.response.Response<com.aop.dto.UserRegDto> com.aop.controller.UserController.createUser(com.aop.dto.UserDto,java.lang.Integer)
+2018-06-29 13:51:18,046 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-29 13:51:18,046 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-29 13:51:18,078 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:51:18,078 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-29 13:51:18,309 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2018-06-29 13:51:18,310 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-29 13:51:18,313 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-29 13:51:18,329 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 7089 (http) with context path ''
+2018-06-29 13:51:18,331 INFO  com.aop.AopModuleApplication : Started AopModuleApplication in 2.459 seconds (JVM running for 2.702)
+2018-06-29 13:51:21,341 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-29 13:51:21,341 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-29 13:51:21,353 INFO  org.springframework.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-06-29 13:51:21,420 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2018-06-29 13:51:21,421 INFO  com.aop.log.UserAudit : Around Method Start ========================================
+2018-06-29 13:51:21,421 INFO  com.aop.log.UserAudit : Around Method called before createUser method get request
+2018-06-29 13:51:21,421 INFO  com.aop.log.UserAudit : Before Method Start +++++++++++++++++++++++++++++++++++++
+2018-06-29 13:51:21,422 INFO  com.aop.log.UserAudit : Before Method called by url :http://localhost:7089/user/25
+2018-06-29 13:51:21,422 INFO  com.aop.log.UserAudit : method type :POST
+2018-06-29 13:51:21,422 INFO  com.aop.log.UserAudit : User created with data :UserDto [firstName=jagan, lastName=mohan, age=25, email=hjfjkfhk]
+2018-06-29 13:51:21,422 INFO  com.aop.log.UserAudit : Before Method End +++++++++++++++++++++++++++++++++++++++
+2018-06-29 13:51:21,440 INFO  com.aop.log.UserAudit : StopWatch 'com.aop.service.UserService': running time (millis) = 19
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00019  100%  createUser
+
+2018-06-29 13:51:21,440 INFO  com.aop.log.UserAudit : Around Method called after create user
+2018-06-29 13:51:21,440 INFO  com.aop.log.UserAudit : Around Method End =========================================
+2018-06-29 13:51:21,440 INFO  com.aop.log.UserAudit : After Method Start -----------------------------------------------
+2018-06-29 13:51:21,440 INFO  com.aop.log.UserAudit : user jagan mohan created by user 25
+2018-06-29 13:51:21,440 INFO  com.aop.log.UserAudit : After Method called before returning response
+2018-06-29 13:51:21,440 INFO  com.aop.log.UserAudit : After Method End --------------------------------------------------
+2018-06-29 13:51:21,441 INFO  com.aop.log.UserAudit : After Returning Start ****************************************************
+2018-06-29 13:51:21,441 INFO  com.aop.log.UserAudit : user jagan mohan created by id 58
+2018-06-29 13:51:21,441 INFO  com.aop.log.UserAudit : user jagan mohan created successfully
+2018-06-29 13:51:21,441 INFO  com.aop.log.UserAudit : After Returning Method callled when user get response
+2018-06-29 13:51:21,441 INFO  com.aop.log.UserAudit : After Returning End ******************************************************
+2018-06-29 13:51:21,441 INFO  com.aop.log.UserAudit : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
